@@ -2,8 +2,8 @@ import os
 from datetime import datetime
 from enum import Enum, unique
 
-ASSEMBLER_PATH = '/Users/bekyiu/dev/guaProject/zoye/10/assembler'
-VM_PATH = '/Users/bekyiu/dev/guaProject/zoye/10/vm'
+ASSEMBLER_PATH = '/Users/bekyiu/dev/guaProject/zoye/11/assembler'
+VM_PATH = '/Users/bekyiu/dev/guaProject/zoye/11/vm'
 
 EXCEPT_LINES = [
     'con instructionBinCode = enums.InstructionBinCode',
@@ -103,7 +103,7 @@ def merge(source_path, target_file):
         f = open(file, 'r', encoding='UTF-8')
         lines = f.readlines()
         for line in lines:
-            if 'con' in line and '=' in line and 'import' in line:
+            if 'con' in line and '=' in line and 'import' in line and ('pimport' not in line):
                 continue
             if line.strip() in EXCEPT_LINES:
                 continue
