@@ -34,6 +34,8 @@ EXCEPT_LINES = [
     'con SaveFromRegister2 = ins.SaveFromRegister2',
     'con JumpFromRegister = ins.JumpFromRegister',
 
+    'con JumpRelative = ins.JumpRelative',
+    'con JumpRelativeIfLess = ins.JumpRelativeIfLess',
     'con ShiftRight = ins.ShiftRight',
     'con And = ins.And',
     'con Debug = ins.Debug',
@@ -158,11 +160,11 @@ con XVM = class() {
     con syncRegs = function() {
         this.register = {
             'pa': this.xvm.pa.value,
-            'a0': this.xvm.a1.value,
-            'a1': this.xvm.a2.value,
-            'a2': this.xvm.a3.value,
-            'c0': this.xvm.c1.value,
-            'f0': this.xvm.f1.value,
+            'a1': this.xvm.a1.value,
+            'a2': this.xvm.a2.value,
+            'a3': this.xvm.a3.value,
+            'c1': this.xvm.c1.value,
+            'f1': this.xvm.f1.value,
         }  
     }
 
