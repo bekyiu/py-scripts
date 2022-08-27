@@ -2,8 +2,8 @@ import os
 from datetime import datetime
 from enum import Enum, unique
 
-ASSEMBLER_PATH = '/Users/bekyiu/dev/guaProject/zoye/11/assembler'
-VM_PATH = '/Users/bekyiu/dev/guaProject/zoye/11/vm'
+ASSEMBLER_PATH = '/Users/bekyiu/dev/guaProject/zoye/8/b/assembler'
+VM_PATH = '/Users/bekyiu/dev/guaProject/zoye/8/b/vm'
 
 EXCEPT_LINES = [
     'con instructionBinCode = enums.InstructionBinCode',
